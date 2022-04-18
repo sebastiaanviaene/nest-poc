@@ -1,0 +1,19 @@
+{
+  "mochaExplorer.files": "build/tests/**/*.test.js",
+  "mochaExplorer.require": ["source-map-support/register"],
+  "mochaExplorer.watch": "build/tests/**/*.test.js",
+  "mochaExplorer.env": { "NODE_ENV": "test" },
+  "mochaExplorer.timeout": 99999999,
+  "testExplorer.mergeSuites": true,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "node_modules/**": true,
+    "**/nyc_output/**": true,
+    "**/coverage/**": true,
+    "**/build/**": true,
+    "<node_internals>/**/*.js": true,
+    "build/**": true
+  }
+}
